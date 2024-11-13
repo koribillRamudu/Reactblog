@@ -1,0 +1,63 @@
+/* Blog Post Styling */
+.blog-post {
+  max-width: 900px;          /* Increased max-width for larger posts */
+  margin: 2rem auto;         /* Center the blog post with margins */
+  padding: 2rem;             /* Increased padding for better spacing */
+  background: #ffffff;       /* White background */
+  border-radius: 12px;       /* Rounded corners for a softer look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow with increased blur */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.blog-post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect for shadow */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.blog-post__header {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post__title {
+  font-size: 2.5rem;            /* Larger font size for the title */
+  font-weight: bold;            /* Emphasize title */
+  color: #34495e;               /* Slightly darker shade for the title */
+  margin-bottom: 0.75rem;       /* Increased space below the title */
+}
+
+.blog-post__meta {
+  display: flex;
+  gap: 1.5rem;                  /* Increased gap for better spacing */
+  color: #7f8c8d;               /* Lighter gray for metadata */
+  font-size: 0.95rem;           /* Slightly larger font size */
+  font-style: italic;           /* Italicize metadata for differentiation */
+}
+
+.blog-post__content {
+  line-height: 1.8;             /* Increased line-height for better readability */
+  color: #2c3e50;               /* Darker text color for contrast */
+  font-size: 1rem;              /* Default font size for content */
+  margin-top: 1.5rem;           /* Spacing above content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post {
+    margin: 1.5rem;            /* Slightly reduced margin for smaller screens */
+    padding: 1.5rem;           /* Padding adjusted for smaller screens */
+  }
+
+  .blog-post__title {
+    font-size: 2rem;           /* Slightly smaller title on mobile */
+  }
+
+  .blog-post__meta {
+    flex-direction: column;    /* Stack metadata vertically on small screens */
+    gap: 0.75rem;              /* Increased gap between meta items */
+    font-size: 0.9rem;         /* Smaller font size on mobile */
+  }
+
+  .blog-post__content {
+    font-size: 0.95rem;         /* Adjust font size for smaller devices */
+  }
+}

@@ -1,22 +1,74 @@
+/* Header styling */
 .blog-header {
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #2d3e50; /* Dark blue background */
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-header h1 {
-  margin: 0;
-  color: #333;
+  font-size: 2.5rem;
+  color: #f0a500; /* Warm gold color */
+  margin: 0.5rem 0;
 }
 
+/* Navigation styling */
 .blog-header nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 0.5rem;
 }
 
-.blog-header nav a {
+.blog-header nav ul li a {
+  color: #ffffff;
   text-decoration: none;
-  color: #666;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  background-color: #3b4a6b; /* Subtle background for links */
+}
+
+.blog-header nav ul li a:hover {
+  color: #2d3e50; /* Dark blue text */
+  background-color: #f0a500; /* Gold background on hover */
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 480px) {
+  .blog-header {
+    padding: 1rem;
+  }
+
+  .blog-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-header nav ul {
+    gap: 0.5rem;
+  }
+
+  .blog-header nav ul li a {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
 }

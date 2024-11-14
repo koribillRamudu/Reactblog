@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
-import './Layout.css';
+// import './Layout.css';
 
 function Layout() {
   return (
